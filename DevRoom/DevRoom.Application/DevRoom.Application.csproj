@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="10.0.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevRoom.Domain\DevRoom.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Libraries\Commands\Create\" />
+    <Folder Include="Features\Libraries\Commands\Delete\" />
+    <Folder Include="Features\Libraries\Commands\Update\" />
+    <Folder Include="Features\Libraries\Queries\GetById\" />
+    <Folder Include="Features\Libraries\Queries\GetList\" />
+    <Folder Include="Features\Notes\Commands\Create\" />
+    <Folder Include="Features\Notes\Commands\Delete\" />
+    <Folder Include="Features\Notes\Commands\Update\" />
+    <Folder Include="Features\Notes\Queries\GetById\" />
+    <Folder Include="Features\Notes\Queries\GetList\" />
+    <Folder Include="Features\Tips\Commands\Create\" />
+    <Folder Include="Features\Tips\Commands\Delete\" />
+    <Folder Include="Features\Tips\Commands\Update\" />
+    <Folder Include="Features\Tips\Queries\GetById\" />
+    <Folder Include="Features\Tips\Queries\GetList\" />
+  </ItemGroup>
+
+</Project>
